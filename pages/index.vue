@@ -31,7 +31,7 @@ onUnmounted(() => {
     <div class="min-h-[140px] flex overflow-hidden">
       <div ref="introduce" class="overflow-hidden" />
     </div>
-    <div v-if="posts" class="slide-enter-content flex flex-col">
+    <div v-if="posts" class="slide-enter-content flex flex-col mt-10">
       <div v-for="post in posts" :key="post._path" class="mb-10">
         <NuxtLink :to="post._path" class="w-fit">
           <div class="flex items-center">
