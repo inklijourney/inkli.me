@@ -29,16 +29,18 @@ const groupedByYear = posts.value?.reduce((result:ArchivedPost[], post) => {
         {{ group.date }}
       </h1>
       <div class="slide-enter-content flex flex-col">
-        <NuxtLink v-for="post in group.posts" :key="post._path" :to="post._path" class="w-fit">
-          <div class="flex items-center mb-10">
-            <div class="text-2xl mr-4 text-gray-500 hover:text-gray-800 dark:text-zinc-400  dark:hover:text-zinc-200">
-              {{ post.title }}
+        <div v-for="post in posts" :key="post._path" class="mb-10">
+          <NuxtLink :to="post._path" class="w-fit">
+            <div class="flex items-center">
+              <div class="text-2xl mr-4 text-gray-500 dark:text-zinc-400 hover:text-gray-700 dark:hover:text-zinc-200">
+                {{ post.title }}
+              </div>
+              <span class="text-sm text-zinc-500 dark:text-zinc-400">
+                {{ formatDate(post.date) }}
+              </span>
             </div>
-            <span class="text-sm text-zinc-500 dark:text-zinc-400">
-              {{ formatDate(post.date) }}
-            </span>
-          </div>
-        </NuxtLink>
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
