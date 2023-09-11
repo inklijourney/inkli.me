@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.dark *::-webkit-scrollbar {
+  background-color: #000000;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background-color: #221d1d;
+}
+
+.dark *::-webkit-scrollbar-thumb:hover {
+  background-color: #413d3d;
+}
+
+/* 自定义滚动条的轨道 */
+*::-webkit-scrollbar {
+  /* 设置滚动条宽度 */
+  width: 10px;
+
+}
+
+/* 自定义滚动条的滑块 */
+*::-webkit-scrollbar-thumb {
+  /* 设置滚动条滑块的颜色 */
+  background-color: #b9b9b9;
+  /* 设置滚动条滑块的圆角 */
+  border-radius: 5px;
+}
+
+/* 滑块悬停时的样式 */
+*::-webkit-scrollbar-thumb:hover {
+  /* 设置滑块悬停时的颜色 */
+  background-color: #9c9797;
+}
