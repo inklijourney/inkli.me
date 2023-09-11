@@ -19,11 +19,11 @@
       </NuxtLink>
     </ul>
     <button type="button" class="ml-4">
-      <span v-if="$colorMode.preference === 'light'" class="flex items-center justify-center" @click="$colorMode.preference = 'dark'">
-        <Icon name="ri:sun-line" class="text-gray-400 text-xl" />
-      </span>
-      <span v-else class="flex items-center justify-center" @click="$colorMode.preference = 'light'">
+      <span v-if="$colorMode.preference === 'dark'" class="flex items-center justify-center" @click="$colorMode.preference = 'light'">
         <Icon name="ri:moon-line" class="text-gray-400 text-xl" />
+      </span>
+      <span v-else class="flex items-center justify-center" @click="$colorMode.preference = 'dark'">
+        <Icon name="ri:sun-line" class="text-gray-400 text-xl" />
       </span>
     </button>
   </div>
