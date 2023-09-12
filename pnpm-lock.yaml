@@ -11,6 +11,9 @@ dependencies:
   '@nuxtjs/color-mode':
     specifier: ^3.3.0
     version: 3.3.0
+  '@vercel/analytics':
+    specifier: ^1.0.2
+    version: 1.0.2
   dayjs:
     specifier: ^1.11.9
     version: 1.11.9
@@ -2051,6 +2054,10 @@ packages:
       hookable: 5.5.3
       unhead: 1.6.2
       vue: 3.3.4
+
+  /@vercel/analytics@1.0.2:
+    resolution: {integrity: sha512-BZFxVrv24VbNNl5xMxqUojQIegEeXMI6rX3rg1uVLYUEXsuKNBSAEQf4BWEcjQDp/8aYJOj6m8V4PUA3x/cxgg==}
+    dev: false
 
   /@vercel/nft@0.23.1:
     resolution: {integrity: sha512-NE0xSmGWVhgHF1OIoir71XAd0W0C1UE3nzFyhpFiMr3rVhetww7NvM1kc41trBsPG37Bh+dE5FYCTMzM/gBu0w==}
